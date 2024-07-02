@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, hsl(200, 82%, 56%), #a4adbd);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.alert-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: blink 1s infinite;
+}
+
+.ham {
+    --blink-color: #37df3d;
+}
+
+.spam {
+    --blink-color: #ed1f1f;
+}
+
+a {
+    color: #fff;
+    text-decoration: none; 
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes blink {
+    0% { background-color: rgba(0, 0, 0, 0.6); }
+    50% { background-color: var(--blink-color); }
+    100% { background-color: rgba(0, 0, 0, 0.6); }
+}
